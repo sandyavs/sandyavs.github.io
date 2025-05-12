@@ -3,17 +3,22 @@
   "version": "1.0.0",
   "main": "script.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "predeploy": "tsc",
-    "deploy": "gh-pages -d dist"
-  },
+  "test": "echo \"Error: no test specified\" && exit 1",
+  "build": "tsc && cp index.html dist/ && cp style.css dist/ && cp -r assets dist/",
+  "predeploy": "npm run build",
+  "deploy": "gh-pages -d dist"
+},
   "keywords": [],
   "author": "",
   "license": "ISC",
   "description": "",
   "devDependencies": {
     "@types/bootstrap": "^5.2.10",
-    "gh-pages": "^6.3.0"
+    "gh-pages": "^6.3.0",
+    "typescript": "^5.8.3"
   },
-  "homepage": "https://sandyavs.github.io"
+  "homepage": "https://sandyavs.github.io",
+  "dependencies": {
+    "@popperjs/core": "^2.11.8"
+  }
 }

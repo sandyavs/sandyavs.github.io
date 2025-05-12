@@ -1,11 +1,13 @@
 {
   "compilerOptions": {
     "target": "es6",
-    "module": "commonjs",
+    "module": "es6",
+    "moduleResolution": "node",  // 🔧 Add this line
     "outDir": "./dist",
     "rootDir": "./src",
     "strict": true,
-    "esModuleInterop": true
+    "esModuleInterop": true,
+    "skipLibCheck": true         // ✅ Optional: skips type errors in node_modules
   },
   "include": ["src/script.ts"],
   "exclude": ["node_modules", "dist"]
