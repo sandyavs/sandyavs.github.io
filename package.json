@@ -14,5 +14,6 @@
   "devDependencies": {
     "@types/bootstrap": "^5.2.10",
     "gh-pages": "^6.3.0"
-  }
+  },
+  "homepage": "https://sandyavs.github.io"
 }
