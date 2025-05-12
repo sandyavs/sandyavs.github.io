@@ -81,10 +81,15 @@ html {
 }
 
 .welcome-text-bounce {
-	font-size: 1.5rem;
-	color: #ffffff;
-	font-weight: bold;
-	animation: fadeInBounce 1.2s ease-out;
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    z-index: 1050; /* above navbar */
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    animation: fadeInBounce 1.2s ease-out;
+    pointer-events: none; /* prevents blocking nav toggles */
 }
 
 @keyframes fadeInBounce {
